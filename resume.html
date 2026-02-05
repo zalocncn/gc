@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume — Oguz Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Caveat&amp;display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .resume-section {
+            border: 1px dashed rgba(0,0,0,0.12);
+            border-radius: 0.5rem;
+        }
+        body.custom-cursor, .custom-cursor * { cursor: none !important; }
+        #custom-cursor { pointer-events: none; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased selection:bg-gray-900 selection:text-white">
+    <!-- Custom cursor (center dot as hit point) -->
+    <div id="custom-cursor" class="fixed top-0 left-0 z-[9999] w-8 h-8 flex items-center justify-center pointer-events-none hidden">
+        <div class="w-8 h-8 rounded-full border-2 border-gray-900 flex items-center justify-center bg-white shadow-sm -translate-x-1/2 -translate-y-1/2">
+            <div class="w-1 h-1 bg-gray-900 rounded-full"></div>
+        </div>
+    </div>
+
+    <!-- Header (same as home) -->
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50">
+        <nav class="flex justify-between items-center py-6 px-6 md:px-12 max-w-[1440px] mx-auto">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="w-10 h-10 border border-gray-200 rounded-lg flex items-center justify-center group-hover:border-gray-400 transition-colors duration-300 bg-white">
+                    <i data-lucide="mail" class="w-4 h-4 text-gray-900 stroke-[1.5]"></i>
+                </div>
+                <span class="text-sm font-semibold tracking-tight text-gray-900">zalocn@gmail.com</span>
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Works</a>
+                <a href="resume.html" class="text-sm font-medium text-gray-900 transition-colors">Resume</a>
+            </div>
+            <button class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-900"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <div class="max-w-3xl mx-auto px-6">
+
+            <!-- Top: Name, title, contact -->
+            <section class="resume-section p-6 md:p-8 mb-6">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 uppercase">Gonzalo Castro</h1>
+                        <p class="text-sm font-medium tracking-[0.2em] uppercase text-gray-600 mt-1">Graphic Designer</p>
+                    </div>
+                    <div class="flex flex-col gap-2 text-sm text-gray-600">
+                        <a href="mailto:zalocn@gmail.com" class="flex items-center gap-2 hover:text-gray-900 transition-colors">
+                            <i data-lucide="mail" class="w-4 h-4 text-gray-900 stroke-[1.5] shrink-0"></i>
+                            zalocn@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Middle: Education + Skills -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <section class="resume-section p-6 md:p-8">
+                    <h2 class="text-xs font-bold tracking-widest uppercase text-gray-900 mb-4">Education</h2>
+                    <p class="text-sm font-semibold text-gray-900">2014 – 2018</p>
+                    <p class="text-sm font-medium text-gray-900 mt-1">Universidad del Pacifico</p>
+                    <p class="text-sm text-gray-600 mt-0.5">Graphic Design</p>
+                </section>
+                <section class="resume-section p-6 md:p-8">
+                    <h2 class="text-xs font-bold tracking-widest uppercase text-gray-900 mb-4">Skills</h2>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <span class="text-gray-400 shrink-0">•</span>
+                            <span>Proactive Initiative</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-gray-400 shrink-0">•</span>
+                            <span>Mastery of Design Tools</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-gray-400 shrink-0">•</span>
+                            <span>Strong Communication &amp; Collaboration</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-gray-400 shrink-0">•</span>
+                            <span>Creative Problem-Solving</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-gray-400 shrink-0">•</span>
+                            <span>Attention to Detail &amp; Consistency</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Work Experience -->
+            <section class="resume-section p-6 md:p-8">
+                <h2 class="text-xs font-bold tracking-widest uppercase text-gray-900 mb-6">Work Experience</h2>
+                <div class="space-y-8">
+                    <div>
+                        <div class="flex flex-wrap items-baseline gap-2">
+                            <h3 class="text-base font-bold text-gray-900">Restu</h3>
+                            <a href="https://restu.me" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">restu.me</a>
+                            <span class="text-sm text-gray-400">2023 – Present</span>
+                        </div>
+                        <ul class="mt-3 space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Lead end-to-end product design and visual development for digital products and brand experiences.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Ship intuitive interfaces and design systems that align with business goals and user needs.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Collaborate with cross-functional teams to deliver consistent, scalable, and accessible experiences.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-gray-100 pt-8">
+                        <div class="flex flex-wrap items-baseline gap-2">
+                            <h3 class="text-base font-bold text-gray-900">Valkyrie</h3>
+                            <a href="https://valkyrieprotocol.com" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">valkyrieprotocol.com</a>
+                            <span class="text-sm text-gray-400">2020 – 2021</span>
+                        </div>
+                        <ul class="mt-3 space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Craft intuitive digital experiences by developing user flows, wireframes, and interface designs for web and mobile.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Own the full creative journey, translating insights and ideas into impactful designs.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Design consistency at scale by curating a unified design system that strengthens brand identity.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-gray-100 pt-8">
+                        <div class="flex flex-wrap items-baseline gap-2">
+                            <h3 class="text-base font-bold text-gray-900">Terra Moon</h3>
+                            <a href="https://moon.gl" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">moon.gl</a>
+                            <span class="text-sm text-gray-400">2021 – 2022</span>
+                        </div>
+                        <ul class="mt-3 space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Improve accessibility and flow through smart, inclusive interaction design.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1.5">•</span>
+                                Design clean, brand-consistent interfaces that boost usability and user experience.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+        (function() {
+            var cursor = document.getElementById('custom-cursor');
+            var body = document.body;
+            if (!cursor) return;
+            function move(e) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            }
+            function enter() {
+                cursor.classList.remove('hidden');
+                body.classList.add('custom-cursor');
+            }
+            function leave() {
+                cursor.classList.add('hidden');
+                body.classList.remove('custom-cursor');
+            }
+            if (window.matchMedia && window.matchMedia('(pointer: fine)').matches) {
+                document.addEventListener('mousemove', move);
+                document.addEventListener('mouseenter', enter);
+                document.addEventListener('mouseleave', leave);
+                enter();
+            }
+        })();
+    </script>
+</body>
+</html>
